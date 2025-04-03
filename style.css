@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;    
+    text-decoration: none;
+    transition: .1s linear;
+    list-style: none;
+    /* color: #000; */
+    /* outline: none; */
+    /* text-transform: capitalize; */
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Header */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+nav .logo span {
+    color: #333cff;
+}
+
+nav .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+nav .navbar a:hover {
+    color: #333cff;
+    border-radius: 8px;
+}
+
+nav .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+nav .icons a:hover {
+    color: #333cff;
+}
+
+nav input {
+    display: none;
+}
+
+nav .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+/* Large device */
+@media (max-width:992px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+/* Medium device */
+@media (max-width:768px) {
+    header nav .fa-bars {
+        display: block;
+    }
+
+    header nav .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+}
+    
+/* Small device */
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
