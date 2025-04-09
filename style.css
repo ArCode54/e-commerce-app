@@ -39,7 +39,7 @@ nav a {
 }
 
 nav .logo span {
-    color: #333cff;
+    color: #333;
 }
 
 nav .navbar a{
@@ -49,8 +49,9 @@ nav .navbar a{
 }
 
 nav .navbar a:hover {
-    color: #333cff;
-    border-radius: 8px;
+    color: #fff;
+    border-radius: 4px;
+    background: #333;
 }
 
 nav .icons-navbar a{
@@ -60,7 +61,8 @@ nav .icons-navbar a{
 }
 
 nav .icons-navbar a:hover {
-    color: #333cff;
+    color: #fff;
+    background: #333;
 }
 
 nav #toggler {
@@ -98,7 +100,7 @@ nav .fa-bars {
 
 .home .content:hover {
     background-color:rgba(0, 0, 0, 0.3) ;
-    box-shadow: 0 .1rem 3rem #333cff;
+    box-shadow: 0 .1rem 3rem #eee;
 }
 
 .home .content h3 {
@@ -118,15 +120,16 @@ nav .fa-bars {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 1rem;
-    background: #333;
-    color: #fff;
+    background: #eee;
+    color: #333;
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
 .home .content .btn:hover {
-    background: #333cff;
+    background: #333;
+    color: #fff;
 }
 
 /* about */
@@ -138,14 +141,15 @@ nav .fa-bars {
 .about .heading {
     text-align: center;
     font-size: 5rem;
-    color: #333;
+    color: #fff;
     padding: 0.5rem;
     margin: 1rem auto;
-    background: rgba(25, 52, 153, 0.05);
+    background: #333;
+    border-radius: 1rem;
 }
 
 .about span {
-    color: #333cff;
+    color: #fff;
     font-size: 5rem;
 }
 
@@ -157,6 +161,7 @@ nav .fa-bars {
 
 .about .row .content-image {
     margin-right: 1rem;
+    flex: 1 1 80rem;
 }
 
 .about .row .content-image img {
@@ -174,7 +179,7 @@ nav .fa-bars {
 
 .about .row .content h4 {
     font-size: 3rem;
-    color: #333cff;
+    color: #333;
 }
 
 .about .row .content p {
@@ -188,16 +193,19 @@ nav .fa-bars {
 .about .row .content .btn {
     display: inline-block;
     margin-top: 1rem;
+    border: 1px solid #333;
     border-radius: 1rem;
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: 1.5rem;
 }
 
 .about .row .content .btn:hover{
-    background-color: #333cff;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
 }
 
 /* icon-content */
@@ -245,16 +253,16 @@ nav .fa-bars {
 }
 
 .products span {
-    color: #333cff;
+    color: #fff;
 }
 
 .products .heading {
     text-align: center;
     font-size: 5rem;
-    color: #333;
+    color: #fff;
     padding: 0.5rem;
     margin: 1rem auto;
-    background: rgba(25, 52, 153, 0.05);
+    background: #333;
 }
 
 .products .list-product {
@@ -264,8 +272,8 @@ nav .fa-bars {
 }
 
 .products .list-product .product {
-    flex: 1 1 30rem;
-    background: #000;
+    flex: 1 1 25rem;
+    background: #eee;
     border: .1rem solid rgba(0, 0, 0, .1);
     border-radius: .5rem;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -273,7 +281,7 @@ nav .fa-bars {
 }
 
 .products .list-product .product:hover {
-    border: .2rem solid #333cff;
+    border: .2rem solid #eee;
 }
 
 .products .list-product .product .discount {
@@ -282,7 +290,7 @@ nav .fa-bars {
     left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
-    color: #333cff;
+    color: #333;
     z-index: 1;
     border-radius: .5rem;
 }
@@ -290,12 +298,12 @@ nav .fa-bars {
 .products .list-product .product .image {
     position: relative;
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem;
     overflow: hidden;
 }
 
 .products .list-product .product .image img {
-    height: 25rem;
+    height: 20rem;
 }
 
 .products .list-product .product:hover .image img {
@@ -319,7 +327,7 @@ nav .fa-bars {
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background: #333cff;
+    background: #333;
     color: #fff;
 }
 
@@ -329,25 +337,26 @@ nav .fa-bars {
 }
 
 .products .list-product .product .image .icons a:hover {
-    background: #333;
+    background: #fff;
+    color: #333;
 }
 
 .products .list-product .product .content {
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
-    background: #000;
+    background: #333;
 }
 
 .products .list-product .product .content h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 
 .products .list-product .product .content .price {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #fff;
     font-weight: bolder;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 .products .list-product .product .content .price span {
@@ -367,14 +376,14 @@ nav .fa-bars {
 .reviews .heading {
     text-align: center;
     font-size: 5rem;
-    color: #333;
+    color: #fff;
     padding: 0.5rem;
     margin: 1rem auto;
-    background: rgba(25, 52, 153, 0.05);
+    background: #333;
 }
 
 .reviews span {
-    color: #333cff;
+    color: #fff;
 }
 
 .reviews .list-reviews {
@@ -403,7 +412,7 @@ nav .fa-bars {
 
 .reviews .list-reviews .review .stars i {
     font-size: 2rem;
-    color: #333cff;
+    color: #333;
 }
 
 .reviews .list-reviews .review p {
@@ -445,14 +454,14 @@ nav .fa-bars {
 .contact .heading {
     text-align: center;
     font-size: 5rem;
-    color: #333;
+    color: #fff;
     padding: 0.5rem;
     margin: 1rem auto;
-    background: rgba(25, 52, 153, 0.05);
+    background: #333;
 }
 
 .contact span {
-    color: #333cff;
+    color: #fff;
 }
 
 .contact .row {
@@ -496,15 +505,16 @@ nav .fa-bars {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 1rem;
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
     padding: 1rem 2rem;
     cursor: pointer;
     font-size: 1.5rem;
 }
 
 .contact .row .btn:hover{
-    background-color: #333cff;
+    background-color: #333;
+    color: #fff;
 }
 
 .contact .row .image {
@@ -732,8 +742,10 @@ footer span {
 
     .about .row {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* padding: 1rem; */
+    margin: auto;
    }
 
    .about .row .content .btn {
